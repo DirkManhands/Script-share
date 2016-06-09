@@ -1,1 +1,3 @@
+#This here powershell script will give you the permissions for the contents of a share by user group.
+
 Get-ChildItem -Recurse |where {$_.psIscontainer -eq $true}|Get-Acl | format-list >[insert output path here]
