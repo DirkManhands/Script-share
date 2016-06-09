@@ -1,0 +1,4 @@
+#Use to find disabled user accounts in AD
+#Make sure to put int he OU you want to search and then the base DN of the doamin.
+
+Get-ADUser -Filter * -SearchBase "OU=*** - Users,DC=***,DC=***" -Properties SAMAccountName | Where-Object {$_.Enabled -eq $false} | Select-Object SAMAccountName | Export-Csv -Path C:\disabled.csv -NoTypeInformation
