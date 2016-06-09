@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse |where {$_.psIscontainer -eq $true}|Get-Acl | format-list >[insert output path here]
