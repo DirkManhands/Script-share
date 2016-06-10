@@ -1,5 +1,5 @@
 $Mode = "Full" ## Set to this when promoting to a fully writable DC
-$Mode = "RODC" ## Set to this when promoting to a Read Only DC
+#$Mode = "RODC" ## Set to this when promoting to a Read Only DC
 
 $IFMPath = "c:\temp\IFM" ## This is where the IFM media set will be created
 
